@@ -1,0 +1,71 @@
+@mixin iconCon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3em;
+	margin-top: 2em;
+}
+
+@mixin icons {
+	font-size: 1.2rem;
+	background: #121212;
+	color: #f2fcff;
+	padding: 10px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+
+	&:hover {
+		background: #f2fcff;
+		color: #121212;
+		border: 1px solid #121212;
+	}
+}
+
+@mixin signup {
+	padding: 2em;
+	display: grid;
+	place-items: center;
+}
+
+@mixin login {
+	display: flex;
+	width: 100%;
+	justify-content: end;
+	align-items: flex-end;
+	font-size: 1rem;
+	cursor: pointer;
+	text-transform: capitalize;
+}
+
+@mixin signtxt {
+	font-size: 2rem;
+	text-transform: capitalize;
+	margin-bottom: 1em;
+}
+
+@mixin inpt {
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 10px 8px;
+	border-bottom: 1px solid #000;
+	font-size: 0.9rem;
+}
+
+@mixin btn {
+	width: 100%;
+	padding: 10px 20px;
+	border-radius: 50px;
+	font-size: 1em;
+	text-transform: capitalize;
+	color: #f2fcff;
+	background: #5551ec;
+	cursor: pointer;
+
+	&:hover {
+		scale: 1.1;
+	}
+}

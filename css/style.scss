@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+@import "mixins";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: transparent;
+	transition: all 0.8s linear;
+}
+body {
+	font-family: "Sora", sans-serif;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+
+	.banner {
+		background: #959dff;
+		padding: 2em;
+
+		.logo {
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			background: #000;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 3em;
+
+			img {
+				width: 100%;
+				border-radius: 50%;
+			}
+		}
+
+		.bgtxt {
+			font-size: 2em;
+			color: #f2fcff;
+		}
+	}
+
+	.signup {
+		@include signup;
+		// display: block;
+
+		.login {
+			@include login;
+		}
+
+		.input {
+			.signtxt {
+				@include signtxt;
+			}
+
+			.inpt {
+				@include inpt;
+			}
+
+			.termsdiv {
+				display: flex;
+				align-items: center;
+				gap: 1em;
+				margin: 2em 0;
+
+				.checkbox {
+					height: 20px;
+					width: 20px;
+					border-radius: 50px;
+					border: 1px solid #959dff;
+					cursor: pointer;
+
+					&:hover {
+						background: #959dff;
+					}
+				}
+				.checkbox.agree {
+					background: #959dff;
+				}
+
+				.termstxt {
+					text-transform: capitalize;
+					font-size: 0.9rem;
+				}
+			}
+
+			.btn {
+				@include btn;
+			}
+		}
+
+		.subicons {
+			@include iconCon;
+
+			.icons {
+				@include icons;
+			}
+		}
+	}
+
+	.login {
+		@include signup;
+
+		// display: none;
+
+		.login {
+			@include login;
+		}
+
+		.signtxt {
+			@include signtxt;
+		}
+
+		.inpt {
+			@include inpt;
+		}
+
+		.btn {
+			@include btn;
+		}
+
+		.subicons {
+			@include iconCon;
+
+			.icons {
+				@include icons;
+			}
+		}
+	}
+
+	.hidden {
+		display: none;
+	}
+}

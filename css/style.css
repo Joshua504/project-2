@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: transparent;
+  transition: all 0.8s linear;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.wrapper .banner {
+  background: #959dff;
+  padding: 2em;
+}
+.wrapper .banner .logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+}
+.wrapper .banner .logo img {
+  width: 100%;
+  border-radius: 50%;
+}
+.wrapper .banner .bgtxt {
+  font-size: 2em;
+  color: #f2fcff;
+}
+.wrapper .signup {
+  padding: 2em;
+  display: grid;
+  place-items: center;
+}
+.wrapper .signup .login {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: flex-end;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.wrapper .signup .input .signtxt {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+.wrapper .signup .input .inpt {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 8px;
+  border-bottom: 1px solid #000;
+  font-size: 0.9rem;
+}
+.wrapper .signup .input .termsdiv {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 2em 0;
+}
+.wrapper .signup .input .termsdiv .checkbox {
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  border: 1px solid #959dff;
+  cursor: pointer;
+}
+.wrapper .signup .input .termsdiv .checkbox:hover {
+  background: #959dff;
+}
+.wrapper .signup .input .termsdiv .checkbox.agree {
+  background: #959dff;
+}
+.wrapper .signup .input .termsdiv .termstxt {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+.wrapper .signup .input .btn {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1em;
+  text-transform: capitalize;
+  color: #f2fcff;
+  background: #5551ec;
+  cursor: pointer;
+}
+.wrapper .signup .input .btn:hover {
+  scale: 1.1;
+}
+.wrapper .signup .subicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  margin-top: 2em;
+}
+.wrapper .signup .subicons .icons {
+  font-size: 1.2rem;
+  background: #121212;
+  color: #f2fcff;
+  padding: 10px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.wrapper .signup .subicons .icons:hover {
+  background: #f2fcff;
+  color: #121212;
+  border: 1px solid #121212;
+}
+.wrapper .login {
+  padding: 2em;
+  display: grid;
+  place-items: center;
+}
+.wrapper .login .login {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: flex-end;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.wrapper .login .signtxt {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+.wrapper .login .inpt {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 8px;
+  border-bottom: 1px solid #000;
+  font-size: 0.9rem;
+}
+.wrapper .login .btn {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1em;
+  text-transform: capitalize;
+  color: #f2fcff;
+  background: #5551ec;
+  cursor: pointer;
+}
+.wrapper .login .btn:hover {
+  scale: 1.1;
+}
+.wrapper .login .subicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  margin-top: 2em;
+}
+.wrapper .login .subicons .icons {
+  font-size: 1.2rem;
+  background: #121212;
+  color: #f2fcff;
+  padding: 10px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.wrapper .login .subicons .icons:hover {
+  background: #f2fcff;
+  color: #121212;
+  border: 1px solid #121212;
+}
+.wrapper .hidden {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
